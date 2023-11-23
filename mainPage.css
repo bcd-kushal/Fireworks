@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&family=Sacramento&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: ivory;
+    font-family: "Josefin Sans",'Poppins',sans-serif;
+    cursor: crosshair;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+body{
+    background: #000;
+    min-height:100vh;
+    max-width: 100vw;
+    overflow: hidden;
+}
+canvas{
+    display: block;
+}
+.fireworks{
+    position: absolute;
+    z-index: -1;
+}
+.main>*{
+    padding: 20px;
+    font-size: 110%;
+}
+.th{
+    display: flex;
+    margin-top: 10px;
+}
+.td{
+    min-height: 17px;
+}
+.no,.page{
+    padding-right: 8px;
+    width: 70px;
+    font-family: 'Ephesis',cursive;
+    text-align: right;
+    font-size: 130%;
+}
+.no{
+    width: 25px;
+}
+.desc{
+    width: 200px;
+    font-family: 'Ephesis',cursive;
+    text-align: left;
+    font-size: 130%;
+}
+
+.storybox{
+    width: 950px; 
+    backdrop-filter: blur(5.5px);
+    border: 1.2px solid rgb(210, 210, 210, 0.45);
+}
+
+
+.main{
+    font-size: 91%;
+}
+
+@media (max-width:500px) {
+    
+    .storybox{
+        width: 100vw;
+        padding: 21px !important;
+        backdrop-filter: blur(0px);
+    }
+    
+
+}
+
+@media (max-width:700px) {
+    
+.storybox{
+    width: 500px;
+}
+
+}
+
+@media (max-width:900px){
+    
+    .main{
+        font-size: calc( 3.22vw );
+    }
+
+}
+@media (max-width:1200px) {
+    
+.storybox{
+    width: 750px;
+    border: 1.2px solid rgb(210, 210, 210, 0) !important;
+    backdrop-filter: blur(0px);
+}
+
+.main{
+    font-size: 91%;
+}
+
+}
+
+
+@media (max-width:3700px) {
+    
+    .storybox{
+        width: 950px !important;
+    }
+    
+    }
+    
